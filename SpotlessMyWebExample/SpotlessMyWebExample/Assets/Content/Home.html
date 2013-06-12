@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+		<title>My Sample Content</title>
+		<link href="Style/main.css" rel="stylesheet" type="text/css" />
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+		<script src="build/knockout-2.2.1.js"></script>
+	</head>
+	<body>
+		<h1>My Android Content</h1>
+		<img src="Images/Image_Seedlings.png"/><br/>
+		<ul>
+			<li><a href="SubPage1.html">Sub Page 1</a></li>
+		</ul>
+		
+		<select data-bind="options: items, optionsText: 'name', value: selectedItem, optionsCaption: 'Choose...'"></select>
+<script>
+$(document).ready(function(){
+	var ViewModel = function(){
+	    var jsonResult = JSON.parse(Foo.bar("test"));
+	    alert(Foo.bar("test"));
+	    this.items = ko.observableArray();
+	    this.selectedItem = ko.observable();
+    //convert json key/value pair into a standardized object array
+    //for (key in jsonResult)  
+	    for (key in jsonResult) {
+	        var itm = jsonResult[key];
+		        var item = {
+		            name: itm.Location,         // Push the key on the array
+		            value: itm.ID // Push the key's value on the array // Push the key's value on the array
+			        };
+		        this.items.push(item);
+    	}
+	};
+	var vm = new ViewModel();
+	ko.applyBindings(vm);
+});
+</script>
+</body>
+</html>

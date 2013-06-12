@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{50B8D7F8-7C55-49DD-B2A7-AA10756A07C9}</ProjectGuid>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>SpotlessMyWebExample</RootNamespace>
+    <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
+    <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
+    <AndroidResgenClass>Resource</AndroidResgenClass>
+    <AndroidApplication>True</AndroidApplication>
+    <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
+    <AssemblyName>SpotlessMyWebExample</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <AndroidLinkMode>None</AndroidLinkMode>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+    <ConsolePause>false</ConsolePause>
+    <AndroidLinkMode>SdkOnly</AndroidLinkMode>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Mono.Android" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\Components\json.net-4.5.11\lib\android\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Json" />
+    <Reference Include="Mono.Android.Export" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MainActivity.cs" />
+    <Compile Include="Resources\Resource.designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Data\Locations.cs" />
+    <Compile Include="Data\DataBridge.cs" />
+    <Compile Include="Data\ServiceOrders.cs" />
+    <Compile Include="Data\SQLite.cs" />
+    <Compile Include="JS2CS.cs" />
+    <Compile Include="Foo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AboutResources.txt" />
+    <None Include="Assets\AboutAssets.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\Main.axml" />
+    <AndroidResource Include="Resources\values\Strings.xml" />
+    <AndroidResource Include="Resources\drawable\Icon.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
+  <ItemGroup>
+    <XamarinComponentReference Include="json.net">
+      <InstallationInProgress>False</InstallationInProgress>
+      <Version>4.5.11</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Assets\Content\" />
+    <Folder Include="Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Content\Home.html" />
+    <AndroidAsset Include="Assets\Content\html5.html" />
+    <AndroidAsset Include="Assets\Content\requiredrawnsignature.html" />
+    <AndroidAsset Include="Assets\Content\SubPage1.html" />
+    <AndroidAsset Include="Assets\Content\build\flashcanvas.js" />
+    <AndroidAsset Include="Assets\Content\build\flashcanvas.swf" />
+    <AndroidAsset Include="Assets\Content\build\journal.eot" />
+    <AndroidAsset Include="Assets\Content\build\journal.svg" />
+    <AndroidAsset Include="Assets\Content\build\journal.ttf" />
+    <AndroidAsset Include="Assets\Content\build\journal.woff" />
+    <AndroidAsset Include="Assets\Content\build\jquery.signaturepad.css" />
+    <AndroidAsset Include="Assets\Content\build\jquery.signaturepad.min.js" />
+    <AndroidAsset Include="Assets\Content\build\json2.min.js" />
+    <AndroidAsset Include="Assets\Content\build\pen.cur" />
+    <AndroidAsset Include="Assets\Content\examples\accept-multiple-signatures.html" />
+    <AndroidAsset Include="Assets\Content\examples\accept-signature.html" />
+    <AndroidAsset Include="Assets\Content\examples\regenerate-signature.html" />
+    <AndroidAsset Include="Assets\Content\examples\sample-signature-output.js" />
+    <AndroidAsset Include="Assets\Content\Images\Image_Seedlings.png" />
+    <AndroidAsset Include="Assets\Content\Style\main.css" />
+    <AndroidAsset Include="Assets\Content\build\knockout-2.2.1.debug.js" />
+    <AndroidAsset Include="Assets\Content\build\knockout-2.2.1.js" />
+  </ItemGroup>
+</Project>

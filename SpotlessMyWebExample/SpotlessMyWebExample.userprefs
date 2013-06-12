@@ -1,0 +1,44 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="SpotlessMyWebExample\Foo.cs">
+    <Files>
+      <File FileName="SpotlessMyWebExample\DataBridge.cs" Line="94" Column="3" />
+      <File FileName="SpotlessMyWebExample\Foo.cs" Line="17" Column="33" />
+      <File FileName="SpotlessMyWebExample\Data\DataBridge.cs" Line="94" Column="47" />
+      <File FileName="SpotlessMyWebExample\JS2CS.cs" Line="37" Column="6" />
+      <File FileName="SpotlessMyWebExample\MainActivity.cs" Line="34" Column="4" />
+      <File FileName="SpotlessMyWebExample\Assets\Content\Home.html" Line="12" Column="47" />
+      <File FileName="SpotlessMyWebExample\Data\SQLite.cs" Line="1" Column="1" />
+      <File FileName="SpotlessMyWebExample\Data\ServiceOrders.cs" Line="1" Column="1" />
+      <File FileName="SpotlessMyWebExample\Data\Locations.cs" Line="1" Column="1" />
+      <File FileName="SpotlessMyWebExample\Assets\Content\html5.html" Line="16" Column="1" />
+      <File FileName="SpotlessMyWebExample\Assets\Content\requiredrawnsignature.html" Line="8" Column="61" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State expanded="True">
+          <Node name="SpotlessMyWebExample" expanded="True">
+            <Node name="References" expanded="True" />
+            <Node name="Assets" expanded="True">
+              <Node name="Content" expanded="True">
+                <Node name="build" expanded="True" />
+              </Node>
+            </Node>
+            <Node name="Data" expanded="True" />
+            <Node name="Properties" expanded="True" />
+            <Node name="Resources" expanded="True">
+              <Node name="layout" expanded="True" />
+              <Node name="values" expanded="True" />
+            </Node>
+            <Node name="Foo.cs" selected="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.SpotlessMyWebExample MonoForAntroid.PreferredDevice="3.7in WVGA (Nexus One)" AndroidDeviceId-Debug="emulator-5558" />
+</Properties>
